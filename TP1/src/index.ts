@@ -14,6 +14,4 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(PING_LISTEN_PORT, () => {
-    console.log(`Le serveur est sur le port ${PING_LISTEN_PORT}`);
-});
+server.listen(PING_LISTEN_PORT);
