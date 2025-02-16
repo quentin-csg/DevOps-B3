@@ -12,5 +12,5 @@ USER api-user
 RUN npx tsc index.ts
 CMD [ "node", "index.js" ]
 
-# docker build -t node .
-# docker run -p 2222:2222 node
+# docker build -t api .
+# docker run -p 2222:2222 api
