@@ -1,22 +1,13 @@
-# DevOps-B3 TP1
+# DevOps-B3 TP2
 
-1- Package npm inclus dans Node.js requis \
-```https://nodejs.org/en```
+## Dockerfile single stage
 
-2- Clone le projet \
-```git clone https://github.com/quentin-csg/DevOps-B3.git```
+```docker build -t api .``` \
+```docker run -p 2222:2222 api```
 
-3- Pour changer le port (par défaut 2222), créer un fichier .env dans le dossier src avec la variable défini à l'intérieur \
-```PING_LISTEN_PORT=n° Port```
+## Dockerfile multi stage
 
-4- Installer les dépendences \
-```npm install```
+A exécuter aussi dans le dossier TP2
 
-5- Compiler le code qui est présent dans le dossier src \
-```npx tsc index.ts```
-
-6- Exécuter le code \
-```node index.js```
-
-7- Effectuer une requête vers l'API \
-```curl http://localhost:2222/ping```
+```docker build -t api2 -f DockerFile2/Dockerfile .``` \
+```docker run -p 2222:2222 api2```
